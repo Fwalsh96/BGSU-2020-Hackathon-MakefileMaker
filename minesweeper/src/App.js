@@ -19,12 +19,12 @@ class Map extends React.Component
   getGridSize()
   {
     return this._gridSize;
-  }
-
+  };
+/*
   render()
   {
     return <body>stuff</body>
-  };
+  };*/
 
   CreateGrid()
   {
@@ -66,7 +66,7 @@ function App() {
 
   //Cell newCell = new Cell
   
-  return (
+  return(
 
     <div>This guy33333</div>,
     Board.CreateGrid()
