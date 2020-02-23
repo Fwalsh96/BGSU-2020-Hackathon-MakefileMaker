@@ -26,9 +26,17 @@ def getAdditionalFiles():
     for x in range(0, numberOfFiles):
         print()
 
-# Function that writes the basics of the makefile
-def universalOut():
-    f.wriet("nothing")
+# Function that writes the compile line
+def compileLine():
+    f.write(compileType + "/t:" + extensionType)
+    f.write("/out:")
+    for x in range(0, numberOfFiles):
+        if(x <= 0):
+            f.write(additionalFiles[x]) 
+        else:
+            f.write(additionalFiles[x] + " ")
+    
+    f.write("/r:")
 
 # Function that writes clean to file
 def macClean():
